@@ -20913,7 +20913,7 @@ function getConfig(env) {
       return {
         networkId: 'local',
         nodeUrl: 'http://localhost:3030',
-        keyPath: "".concat("C:\\Users\\sergi", "/.near/validator_key.json"),
+        keyPath: "".concat("/Users/juliotruzzi", "/.near/validator_key.json"),
         walletUrl: 'http://localhost:4000/wallet',
         contractName: CONTRACT_NAME
       };
@@ -21112,7 +21112,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60652" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54764" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
