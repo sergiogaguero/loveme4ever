@@ -29,3 +29,5 @@ neardev/dev-account
 contract/target/**
 
 yarn-error.log
+
+dist/
