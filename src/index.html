@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+  <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Varela Round', 'Quicksand', sans-serif;
+        background-color: #800020;
+      }
+
+      .postcard {
+        width: 800px;
+        height: 500px;
+        background-color: #f7f7f7;
+        margin: 0 auto;
+        border-radius: 2%;
+        display: flex;
+        justify-content: space-between;
+        padding: 3em;
+        box-shadow: .8em .8em 15px rgba(0,0,0,.3);
+        -ms-transform: rotate(2.5deg); /* IE 9 */
+          -webkit-transform: rotate(2.5deg); /* Chrome, Safari, Opera */
+          transform: rotate(2.5deg);
+        -moz-transition: all .5s ease;
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 5em;
+        color: #f7f7f7;
+        margin-bottom: -15px;
+      }
+
+      p {
+        display: inline;
+        font-size: 1.3em;
+      }
+
+      /*animation*/
+      .postcard:hover,
+      .postcard:active,
+      .postcard:focus{
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+        -moz-transition: all .5s ease;
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+
+
+      }
+
+      /*form*/
+      input,
+      textarea {
+        border: none;
+        border-radius: 4%;
+        height: 1.9em;
+        padding: .7em;
+        font-size: 1.3em;
+        font-family: 'Varela Round', 'Quicksand', sans-serif;
+      }
+
+      input:focus,
+      textarea:focus {
+        outline-color: pink;
+      }
+
+      .mail_stamp {
+        width: 100px;
+        float: right;
+      }
+
+      #address {
+        text-decoration: underline;
+      }
+
+      textarea {
+        overflow: auto;
+        resize: none;
+        height: 10em;
+        width: 17em;
+        margin-top: .5em;
+        margin-bottom: 1em;
+      }
+
+      .push{
+        margin-bottom: 1em;
+        margin-top: .5em;
+      }
+
+      #recipient_email{
+        margin-top: 4.5em;
+        margin-bottom: 1.5em;
+      }
+
+      /*footer*/
+      footer {
+        margin: 2em auto;
+        text-align: center;
+        font-family: 'Varela Round', 'Quicksand', sans-serif;
+        color: white;
+      }
+
+      footer p {
+        font-size: 1em;
+        letter-spacing: 1px;
+      }
+
+
+
+    </style>
+      <title>Send a Love Letter!</title>
+
+</head>
+<body >
+  <div class = "wrap">
+    <h1 class="mb-3">NEAR4ever</h1>
+    <div class = "postcard">
+      
+      <div id="form" class = "letter">
+        <form  class="message_form">
+          <p class = "push">I </p><input type = "text" id = "myAccount" name = "recipient_name" placeholder = "name of recipient" class = "push"><p> ,</p><br>
+          <!--label for = "message">Love Message</label--><br>
+          <textarea id = "newMessage" name = "message_to_recipient" placeholder = "Write a love message to your love one 4ever"></textarea><br>
+          <p id="message"></p><br>
+
+        </form>
+        <button class="btn btn-primary" id="sendMessage" style="background-color: #0072CE;">Send Message</button>
+        <button class="btn btn-primary" id="getMessage" style="display:none; background-color: #0072CE;">Get Message</button>
+        
+        <button class="sign-out btn btn-primary" style="background-color: #0072CE;">Sign Out</button>
+      </div>
+      <div class="sign-in" style="display: none;">
+        <p>You'll need to sign in to call contract methods:</p>
+        <button class="btn btn-primary" style="background-color: #0072CE;">Sign In</button>
+      </div>
+      <div class = "address">
+        <img src = "http://i44.photobucket.com/albums/f9/dandee114/stamp_zpsvbuxiwih.png" class = "mail_stamp">
+        <!--form action="#" method="post" class="message_form">
+        <input type = "email" id = "recipient_email" name = "recipient_email" placeholder = "recipient's account">
+        </form>
+        <p id = "address">Cherry Lane 1514,<br>
+          Lovely Heart,<br>
+          Hundred Acre Wood.
+        </p-->
+      </div>
+      
+    </div>
+  </div>
+  
+  <footer>
+    <p>Happily crafted by @sergiogaguero.</p>
+  
+   
+  </footer>
+  <script src="./main.js"></script>
+</body>
+</html>
+
+
