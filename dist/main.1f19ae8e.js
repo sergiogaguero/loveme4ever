@@ -20876,7 +20876,7 @@ __exportStar(require("./browser-connect"), exports);
 require("error-polyfill");
 
 },{"./key_stores/browser-index":"../node_modules/near-api-js/lib/key_stores/browser-index.js","./common-index":"../node_modules/near-api-js/lib/common-index.js","./browser-connect":"../node_modules/near-api-js/lib/browser-connect.js","error-polyfill":"../node_modules/error-polyfill/index.js"}],"config.js":[function(require,module,exports) {
-var CONTRACT_NAME = undefined || 'loveme4ever.testnet';
+var CONTRACT_NAME = undefined || 'juliotruzzi.testnet';
 
 function getConfig(env) {
   switch (env) {
@@ -21112,7 +21112,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54764" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63037" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
